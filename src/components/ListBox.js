@@ -3,7 +3,7 @@ import "../styles/ListBox.scss";
 import ListItem from "./ListItem";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { deleteItem } from "../features/todoSlice/todoSlice";
+import { deleteCompletedItems } from "../features/todoSlice/todoSlice";
 
 const ListBox = () => {
   const dispatch = useDispatch();
@@ -87,7 +87,7 @@ const ListBox = () => {
 
   // DELETING FUNCTIONALITY
   const onDelete = () => {
-    dispatch(deleteItem());
+    dispatch(deleteCompletedItems());
   };
 
   console.log();
@@ -103,7 +103,9 @@ const ListBox = () => {
       </div>
 
       <footer className="footer">
-        <div className="item-left">0 items left</div>
+        <div className="item-left">{`${
+          renderActiveItem().length
+        } items left`}</div>
         <div className="btn-group">
           <button
             onClick={onAllBtn}

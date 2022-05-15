@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .form {
-  background-color: $color-todo-background;
+  background-color: var(--color-todo-background);
   padding: 1.6rem 2.4rem;
   border-radius: 0.7rem;
 
@@ -15,7 +15,7 @@
   &__btn {
     border: none;
     background: none;
-    border: 2px solid $color-todo-text-4;
+    border: 2px solid var(--color-todo-text-4);
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
@@ -27,13 +27,13 @@
     display: block;
     font-size: 1.6rem;
     font-family: inherit;
-    color: $color-todo-text;
+    color: var(--color-todo-text);
     background: none;
     border: none;
     outline: none;
 
     &::placeholder {
-      color: $color-todo-text-2;
+      color: var(--color-todo-text-2);
     }
   }
 }

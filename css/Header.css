@@ -1,0 +1,27 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.header__logo {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-todo-logo);
+}
+
+.header__theme-switch {
+  fill: var(--color-todo-logo);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}

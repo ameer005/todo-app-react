@@ -15,6 +15,6 @@ root.render(
     <PersistGate loading={null} persistor={persistor}>
       <App />
     </PersistGate>
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
+  // document.getElementById("root")
 );

@@ -1,0 +1,52 @@
+.form {
+  background-color: var(--color-todo-background);
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.form__btn {
+  border: none;
+  background: none;
+  border: 2px solid var(--color-todo-text-4);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: var(--color-todo-text);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: var(--color-todo-text-2);
+}
+
+.form__input:-ms-input-placeholder {
+  color: var(--color-todo-text-2);
+}
+
+.form__input::-ms-input-placeholder {
+  color: var(--color-todo-text-2);
+}
+
+.form__input::placeholder {
+  color: var(--color-todo-text-2);
+}
