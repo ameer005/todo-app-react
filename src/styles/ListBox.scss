@@ -8,10 +8,12 @@
   height: 37rem;
   background-color: $color-todo-background;
   overflow-y: scroll;
+  scrollbar-color: $color-todo-text-2;
+  scrollbar-width: thin;
 
   &::-webkit-scrollbar {
     width: 0.5rem;
-    display: none;
+    // display: none;
   }
 
   &::-webkit-scrollbar-track {
@@ -22,13 +24,6 @@
   &::-webkit-scrollbar-thumb {
     background: $color-todo-text-2;
     border-radius: 0.9rem;
-  }
-}
-
-@supports (scrollbar-width: thin) {
-  .list-box {
-    scrollbar-color: $color-todo-text-2 $color-todo-text-2;
-    scrollbar-width: thin;
   }
 }
 

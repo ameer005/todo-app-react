@@ -13,3 +13,8 @@ $color-todo-text: hsl(234, 39%, 85%);
 $color-todo-text-2: hsl(234, 11%, 52%);
 $color-todo-text-3: hsl(233, 14%, 35%);
 $color-todo-text-4: hsl(237, 14%, 26%);
+
+.light-theme {
+  $color-body-background: hsl(0, 0%, 98%);
+  $color-todo-background: hsl(0, 0%, 98%);
+}

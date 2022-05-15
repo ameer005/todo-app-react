@@ -6,7 +6,7 @@ import ListBox from "./components/ListBox";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="app light-theme">
       <Header />
       <InputTodo />
       <ListBox />
