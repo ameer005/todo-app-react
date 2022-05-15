@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+.list-item {
+  display: flex;
+  padding: 1.6rem 2.4rem;
+  align-items: center;
+  gap: 1.8rem;
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-todo-text;
+  }
+}
+
+.completed-item {
+  text-decoration: line-through;
+  color: $color-todo-text-3;
+}
+
+.list-item__btn {
+  position: relative;
+  border: none;
+  background: none;
+  border: 2px solid $color-todo-text-4;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.completed-btn::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+
+  background-image: url("../assets/images/icon-check.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.completed-btn {
+  background-image: linear-gradient($color-gradient-1, $color-gradient-2);
+}

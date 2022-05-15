@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-image: url(../assets/images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 28rem;
+  background-color: $color-body-background;
+  height: 100vh;
+
+  display: grid;
+  align-items: center;
+}
+
+.app {
+  margin: 0 auto;
+  // background-color: red;
+  max-width: 55rem;
+  // height: 55rem;
+}

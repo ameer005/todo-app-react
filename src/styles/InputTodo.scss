@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.form {
+  background-color: $color-todo-background;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.7rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.8rem;
+
+  margin-bottom: 2.4rem;
+
+  &__btn {
+    border: none;
+    background: none;
+    border: 2px solid $color-todo-text-4;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__input {
+    flex: 1;
+    display: block;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: $color-todo-text;
+    background: none;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $color-todo-text-2;
+    }
+  }
+}

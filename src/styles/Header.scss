@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3.2rem;
+  &__logo {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-todo-hover;
+  }
+
+  &__theme-switch {
+    fill: $color-todo-hover;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
