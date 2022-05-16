@@ -16,11 +16,23 @@
     @include respond(phone) {
       font-size: 3.2rem;
     }
+
+    @include respond(phone-min) {
+      font-size: 2.8rem;
+    }
   }
 
   &__theme-switch {
     fill: var(--color-todo-logo);
     transform: scale(1.1);
     cursor: pointer;
+
+    @include respond(phone) {
+      transform: scale(0.9);
+    }
+
+    @include respond(phone-min) {
+      transform: scale(0.8);
+    }
   }
 }
