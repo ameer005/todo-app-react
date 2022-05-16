@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todo: [],
+  theme: "dark-theme",
 };
 
 const todoSlice = createSlice({
@@ -27,9 +28,18 @@ const todoSlice = createSlice({
 
       state.todo = afterDeleting;
     },
+    updateTheme: (state, { payload }) => {
+      console.log(payload);
+      state.theme = payload;
+    },
   },
 });
 
-export const { addItem, updateItem, deleteCompletedItems, deleteItem } =
-  todoSlice.actions;
+export const {
+  addItem,
+  updateItem,
+  deleteCompletedItems,
+  deleteItem,
+  updateTheme,
+} = todoSlice.actions;
 export default todoSlice.reducer;
