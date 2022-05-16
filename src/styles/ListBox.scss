@@ -2,7 +2,8 @@
 
 .list-container {
   border-radius: 0.7rem;
-  box-shadow: 0 2rem 2.8rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 2.8rem rgba(0, 0, 0, 0.056);
+  position: relative;
 }
 
 .list-box {
@@ -56,6 +57,20 @@
 .btn-group {
   display: flex;
   gap: 1.4rem;
+
+  @include respond(phone) {
+    justify-content: center;
+
+    position: absolute;
+    bottom: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-todo-background);
+    padding: 2rem;
+    width: 100%;
+    max-width: 55rem;
+    border-radius: 0.7rem;
+  }
 }
 
 .btn-sort {

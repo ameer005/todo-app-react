@@ -31,6 +31,11 @@
   height: 2.8rem;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 2px solid $color-gradient-2;
+  }
 }
 
 .completed-btn::before {

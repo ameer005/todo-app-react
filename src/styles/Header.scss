@@ -5,13 +5,17 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 3.2rem;
+  margin-bottom: 3.8rem;
   &__logo {
     font-size: 4rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--color-todo-logo);
+
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
   }
 
   &__theme-switch {
