@@ -40,9 +40,9 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @include respond(tab-pot) {
-    font-size: 56.25%;
-  }
+  // @include respond(tab-pot) {
+  //   font-size: 56.25%;
+  // }
 }
 
 body {
@@ -76,7 +76,7 @@ body {
 .light-theme {
   background-image: url(../assets/images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 28rem;
+  background-size: 100% 40vh;
 
   @include respond(phone) {
     background-image: url(../assets/images/bg-mobile-light.jpg);
