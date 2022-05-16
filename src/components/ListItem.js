@@ -7,7 +7,7 @@ const ListItem = ({ data }) => {
   const disaptch = useDispatch();
 
   const completed = () => {
-    disaptch(updateItem({ completed: true, id: data.id }));
+    disaptch(updateItem({ completed: !data.completed, id: data.id }));
   };
 
   const onDeleteItem = () => {
